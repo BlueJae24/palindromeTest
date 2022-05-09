@@ -1,0 +1,14 @@
+
+N = input('please give me a palindrome: ')
+Ncopy = N
+N = N.lower()
+N = N.replace(' ', '')
+N = N.replace("'", '')
+N = N.replace('!', '')
+N = N.replace('?', '')
+N = N.replace(',', '')
+N = N.replace('.', '')
+if N == N[::-1]:
+    print(f'yes! {Ncopy} is a palindrome!')
+else:
+    print(f'{Ncopy} is not a palindrome')
